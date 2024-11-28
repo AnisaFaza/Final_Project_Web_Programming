@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesignup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <!--Navbar Section-->
+    <div class="fContainer">
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="firstname">event</div>
+                <div class="lastname"> treasure</div>
+            </div>
+            <ul class="navigation">
+                <li><a href="homepage.html">home</a></li>
+                <li><a href="/">events</a></li>
+                <li><a href="/">discount</a></li>
+                <li><a href="loginpage.html">login</a></li>
+                <li><a href="signup.html" class="active">sign up</a></li>
+            </ul>
+        </nav>
+    <!--Sign Up Section-->
+    <h1>Sign Up</h1>
+        <form class="signup-container" action="/" method="POST">
+            <label class="username"></label>
+            <input type="text" id="Username" name="Username" placeholder="Username" required><br>
+            <label class="password"></label>
+            <input type="text" id="password" name="password" placeholder="Password" required><br>
+            <label class="confirm_password"></label>
+            <input type="text" id="confirm_password" name="password" placeholder="Conform Password" required><br>
+            <button type="submit">Sign Up</button>
+            <p>Already have account? <a href="/loginpage.html">Log In here!</a></p>
+        </form>
+</body>
+</html>

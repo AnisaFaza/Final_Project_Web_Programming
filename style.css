@@ -3,6 +3,7 @@
     padding : 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
+    text-align: justify;
 }
 
 /*main container*/
@@ -22,7 +23,7 @@
     align-items: center;
     font-size: 20px;
     padding: 12px;
-    width: 1400px;
+    width: 100%;
     height: 70px;
     background: #03045e;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2);
@@ -99,19 +100,23 @@
 .arts-right h3 {
     font-size: 72px;
     color: #03045e;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
 .arts-right h3 span {
     font-size: 64px;
     color: crimson;
+    margin-top: 50px;
     margin-bottom: 10px;
 }
 
 .arts-right p {
-    font-size: 16px;
+    font-size: 14px;
     color: #03045e;
-    margin-bottom: 0px;
+    margin-right: 90px;
+    text-align: justify;
+
 }
 
 .arts-left img {
@@ -119,4 +124,100 @@
     max-width: 500px;
     height: auto;
     border-radius: 2px;
+}
+
+/*Newest Events Section*/
+.newest-event {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.newest-event h3 {
+    font-size: 36px;
+    color: #03045e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.newest-event h3 span{
+    font-size: 36px;
+    color: crimson;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carousel {
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+    gap: 10px;
+    scroll-behavior: smooth;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel-item {
+    display: inline-block;
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-item p {
+    padding: 10px;
+    background-color: #03045e;
+    color: #ffffff;
+    margin: 0;
+    font-size: 12px;
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-controls button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-controls button:hover {
+    background-color: #0056b3;
+}
+
+/*feedback
+
+#contact {
+    padding: 10px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 3rem;
+}
+
+.contact-form div {
+    margin-bottom: 1.4rem;
 }
