@@ -15,7 +15,7 @@
                 <div class="lastname"> treasure</div>
             </div>
             <ul class="navigation">
-                <li><a href="index.html">home</a></li>
+                <li><a href="homepage.html">home</a></li>
                 <!--<li><a href="/">About</a></li>-->
                 <li><a href="/">Events</a></li>
                 <li><a href="loginpage.html">login</a></li>
@@ -44,9 +44,9 @@
             <div class="carousel">
                 <div class="carousel-track">
 
-                    <div class="carousel-controls">
+                    <!--<div class="carousel-controls">
                         <button id="prev">◀</button>
-                    </div>
+                    </div>-->
 
                     <div class="carousel-item">
                         <img src="images/event_1.jpg" alt="Music Festival">
@@ -77,40 +77,41 @@
                         <img src="images/event_6.jpg" alt="Reggae Comprtition">
                         <p>Reggae Competition</p>
                     </div>
-
-                    <div class="carousel-controls">
-                        <button id="next">▶</button>
-                    </div>
-                    
                 </div>
             </div>
+        <!--discount-->
+        <div class="discount">
+            <p class="offer">Enjoy a massive 50% discount when you shop using PayPal! Take advantage of this incredible deal and save big. Terms and conditions apply: valid for purchases over $50 and available until January 30th, 2025. Don’t miss this exclusive, limited-time offer—shop now and make the most of your savings!</p>
+            <img src="images/discount.png">
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="feedback-form">
+            <h2>Drop us a line!</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your feedback here..." required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <p><strong>Address:</strong> 123 Main Street, Anytown, USA</p>
+            <p><strong>Email:</strong> eventtreasure@yahoo.com</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Working Hours:</strong> Mon - Fri, 9:00 AM - 5:00 PM</p>
+        </div>
+
         </section>
 
-        <!--Contact
-    <section id="contact">
-        <div class="contact main-container">
-            <div class="contact-left">
-                <form class="form" action="">
-                    <div>
-                        <input type="text" placeholder="Name" name="name">
-                    </div>
-
-                    <div>
-                        <input type="email" placeholder="E-Mail" name="email">
-                    </div>
-
-                    <div>
-                        <textarea name="massege" id="massege" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <div>
-                        <button class="btn-submit">Send</button>
-                    </div>
-                </form>
-            </div>
-    </section>-->
-
-    
-    <script src="script.js"></script>
 </body>
 </html>
